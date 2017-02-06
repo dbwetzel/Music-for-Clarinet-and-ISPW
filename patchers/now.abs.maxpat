@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 398.0, 91.0, 657.0, 686.0 ],
+		"rect" : [ 439.0, 78.0, 657.0, 686.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,6 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 33.0, 204.0, 100.0, 22.0 ],
-					"presentation_rect" : [ 34.0, 203.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -127,7 +126,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 120.5, 41.0, 80.0, 13.0 ],
+					"patching_rect" : [ 135.0, 49.0, 80.0, 13.0 ],
 					"style" : ""
 				}
 
@@ -140,21 +139,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formantcorrection" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"quality" : [ "basic" ],
-									"basictuning" : [ 440 ],
-									"formant" : [ 1.0 ],
 									"originaltempo" : [ 120.0 ],
+									"followglobaltempo" : [ 0 ],
+									"quality" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
 									"timestretch" : [ 0 ],
-									"mode" : [ "basic" ],
+									"slurtime" : [ 0.0 ],
 									"play" : [ 0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
 									"pitchshift" : [ 1.0 ],
-									"speed" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"formant" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"followglobaltempo" : [ 0 ]
+									"speed" : [ 1.0 ]
 								}
 
 							}
@@ -181,7 +180,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 42.0, 252.0, 131.0, 19.0 ],
+					"patching_rect" : [ 33.0, 252.0, 131.0, 19.0 ],
 					"style" : "",
 					"text" : "biquad~ 1. -1. 0. -0.999 0."
 				}
@@ -266,7 +265,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 558.0, 173.0, 493.0, 765.0 ],
+						"rect" : [ 558.0, 173.0, 650.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -305,7 +304,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 354.5, 730.0, 129.0, 19.0 ],
-									"presentation_rect" : [ 94.0, 586.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "2p2z~ 1. 0.999 0. 1. -1. 0."
 								}
@@ -2779,7 +2777,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -3082,9 +3080,9 @@
 									"id" : "obj-16",
 									"linecount" : 2,
 									"maxclass" : "newobj",
-									"numinlets" : 1,
+									"numinlets" : 7,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "signal" ],
 									"patching_rect" : [ 279.0, 196.0, 124.0, 30.0 ],
 									"style" : "",
 									"text" : "2p2z~ 0.001 0.999 0. 1. 0. 0."
@@ -4073,6 +4071,12 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "2p2z~.maxpat",
+				"bootpath" : "~/Documents/Max 7/Projects/CL-ISPW 2017/patchers",
+				"type" : "maxb",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "osc1~",
 				"bootpath" : "~/Documents/Max 7/Projects/CL-ISPW 2017/other",
 				"type" : "maxb",
@@ -4081,12 +4085,6 @@
 , 			{
 				"name" : "tab1~",
 				"bootpath" : "~/Documents/Max 7/Projects/CL-ISPW 2017/other",
-				"type" : "maxb",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "2p2z~.maxpat",
-				"bootpath" : "~/Documents/Max 7/Projects/CL-ISPW 2017/patchers",
 				"type" : "maxb",
 				"implicit" : 1
 			}
